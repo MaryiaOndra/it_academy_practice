@@ -6,11 +6,24 @@ namespace LettersCount
     {
         static void Main(string[] args)
         {
-            string inputWord = Console.ReadLine();
-            int lenghtString = inputWord.Length;
-          
+            Console.WriteLine("Please input the word:");
 
-           
+            string inputWord = Console.ReadLine();
+
+            int count = 0;
+
+            foreach (char i in inputWord)
+            {
+                if (i == 'a' || i== 'A')
+                {
+                    count++;
+                }
+            }
+
+            Console.WriteLine("Your result: " + count);
+
+            Console.ReadLine();
+                    
 
         }
     }
