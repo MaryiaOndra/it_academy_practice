@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Lecture._6
 {
@@ -8,12 +9,12 @@ namespace Lecture._6
         {
             Task1();
             Task2();
-            //Task3();
+            Task3();
             //Task4();
 
             void Task1()
             {
-                object[] empty = new object[default];
+                int[] empty = new int[default];
                 for (int i = 0; i < empty.Length; i++)
                 {
                     Console.WriteLine(empty[i]);
@@ -38,19 +39,22 @@ namespace Lecture._6
                 }
 
                 Console.ReadLine();
-
-
             }
 
-            //static void Task3()
-            //{
-            //    int rend = 0;
-            //    int[] randomArray = new[] { };
-            //    for (int i = 0; i < length; i++)
-            //    {
+            void Task3()
+            {
+                Random random = new Random();
 
-            //    }
-            //}
+                int[] randomArray = new int [13];
+
+                for (int i = 0; i < randomArray.Length; i++)
+                {
+                    randomArray[i] = random.Next(int.MinValue, int.MaxValue);
+                    Console.WriteLine(randomArray[i]);
+                }
+                        
+                Console.WriteLine("It is the max number:" + randomArray.Max());                
+            }
 
             //static void Task4()
             //{
@@ -58,7 +62,7 @@ namespace Lecture._6
             //    object o = t;
             //    short sbyte c = (short)o;
             //    Console.WriteLine(c);
-            //}            
+            //}
         }
     }
 }
