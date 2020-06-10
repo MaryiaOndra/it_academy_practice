@@ -6,15 +6,19 @@ namespace Lecture._6
     {
         static void Main(string[] args)
         {
-            //Task1();
+            Task1();
             Task2();
             //Task3();
             //Task4();
 
-            //void Task1()
-            //{
-            //    object[] empty = new object[default];
-            //}
+            void Task1()
+            {
+                object[] empty = new object[default];
+                for (int i = 0; i < empty.Length; i++)
+                {
+                    Console.WriteLine(empty[i]);
+                }
+            }
 
             void Task2()
             {
