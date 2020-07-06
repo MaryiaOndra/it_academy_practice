@@ -7,19 +7,18 @@ namespace Identifier
 {
     class UniqueItem
     {
-        static private int _startID;
         static private int itemID;
         static private int count;
 
         public UniqueItem()
         {
             count++;
-            _startID = count;
+            itemID = count;
         }
         public UniqueItem(int startID)
         {
-            _startID = startID;
-            count++;             
+            count = startID;
+            itemID = count;            
         }
     }
 }
