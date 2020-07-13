@@ -12,17 +12,24 @@ namespace Task3
             floorNeighbors.Add(new Neighbor("Masha", 15, 545646));
             floorNeighbors.Add(new Neighbor("Slava", 45, 457898));
 
-            void AskNum(Neighbor neighbor)
+            SearchDupl(floorNeighbors, AskNum());
+
+            static int AskNum()
             {
                 Console.WriteLine("What is number of your flat?");
 
                 int num = Convert.ToInt32(Console.ReadLine());
 
-                for (int i = 0; i < floorNeighbors.Count ; i++)
+                return num ;
+            }
+
+            void SearchDupl(List <Neighbor> listN, int number) 
+            {
+                for (int i = 0; i < listN.Count; i++)
                 {
-                    if (num.Equals(neighbor.FlatNumber))
+                    if (number.Equals(listN.)) 
                     {
-                        Console.WriteLine($"full name: {neighbor.FullName} \n phone number: {neighbor.PhoneNumber}");
+                    
                     }
                 }
             }

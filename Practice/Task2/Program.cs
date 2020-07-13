@@ -7,7 +7,7 @@ namespace Task2
         public static void Main(string[] args)
         {
             string s = "You all are mistaken!";
-            s.CutString('.');            
+            Console.WriteLine(s.CutString());      
         }
     }
 }
