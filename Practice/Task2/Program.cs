@@ -6,7 +6,7 @@ namespace Task2
     {
         public static void Main(string[] args)
         {
-            string s = "You all are mistaken!";
+            string s = "You all are mistaken";
             Console.WriteLine(s.CutString());      
         }
     }

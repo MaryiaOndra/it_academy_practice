@@ -9,7 +9,7 @@ namespace Task2
         public static string CutString(this String s) 
         {
             string newString = s.Remove(4, (s.Length - 5));
-            newString = newString.Insert(4, "...");
+            newString = newString.Insert(5, "...");
 
             return newString;
         }

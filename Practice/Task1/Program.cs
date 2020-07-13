@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using Newtonsoft.Json;
 
 namespace Task1
 {
@@ -15,19 +14,15 @@ namespace Task1
             for (int i = 0; i < rectangles.Length; i++)
             {
                 rectangles[i] = new Rectangle(new Random().Next(1, 10), new Random().Next(1, 10));
-
-                for (int j = 0; j < rectangles.Length; j++)
+                                                
+                if (rectangles[i].Equals(rectangles[0]))
                 {
-                    if (rectangles[i].Equals(rectangles.First()))
-                    {
-                        countDuplicates++;
-                    }
-                    else
-                        bre;
+                    countDuplicates++;
                 }
+
+                Console.WriteLine(i);
             }
 
-            Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(rectangles));
             Console.WriteLine($"Duplicates:{countDuplicates}");
         }
     }
