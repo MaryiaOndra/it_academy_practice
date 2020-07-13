@@ -27,9 +27,13 @@ namespace Task3
             {
                 for (int i = 0; i < listN.Count; i++)
                 {
-                    if (number.Equals(listN.)) 
+                    if (number.Equals(listN[i].FlatNumber)) 
                     {
-                    
+                        Console.WriteLine($"phone number:{listN[i].PhoneNumber} \n Neighbor name: {listN[i].FullName}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Neighbor is not found");
                     }
                 }
             }
